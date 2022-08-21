@@ -1,0 +1,16 @@
+.header-info {
+    background-color: rgba(15, 15, 15, 0.593);
+    padding: 50px;
+    margin: auto 20%;
+    border-radius: 10px;
+}
+
+.header-info>h1 {
+    color: crimson;
+    font-family: cursive;
+}
+
+.header-info>p {
+    /* color: rgb(3, 238, 234); */
+    font-weight: 700;
+}
