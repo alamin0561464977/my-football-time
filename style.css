@@ -14,3 +14,18 @@
     /* color: rgb(3, 238, 234); */
     font-weight: 700;
 }
+
+.button {
+    background-color: crimson;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 12px 45px;
+    margin: auto 10px;
+    border-radius: 10px;
+}
+
+img {
+    height: 250px;
+    width: 100%;
+}
