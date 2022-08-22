@@ -18,6 +18,10 @@ function PlayerInfo(element) {
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerMoney = getElementByIdInputFil('per-player');
     const PlayerExpenses = document.getElementById('Player-Expenses');
+    if (isNaN(perPlayerMoney) === true) {
+        alert('Sorry!!!');
+        return;
+    }
     const ol = document.getElementById('ol');
     const olLength = ol.children.length;
     const PlayerExpensesTotal = perPlayerMoney * olLength;
@@ -29,9 +33,14 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const total = document.getElementById('total');
     const manager = getElementByIdInputFil('manager');
     const coach = getElementByIdInputFil('coach');
+    if (isNaN(manager) === true && isNaN(coach)) {
+        alert('Sorry!!!');
+        return;
+    }
     const PlayerExpenses = parseInt(document.getElementById('Player-Expenses').innerText);
     const totalMoney = PlayerExpenses + manager + coach;
     total.innerText = totalMoney;
-    console.log(PlayerExpenses)
+    console.log(isNaN(manager));
+
 
 })
