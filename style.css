@@ -25,7 +25,19 @@
     border-radius: 10px;
 }
 
+.button:hover {
+    background-color: #c73452;
+}
+
 .img {
     height: 250px;
     width: 100%;
+}
+
+.input {
+    color: crimson;
+    font-weight: 700;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 8px;
 }
