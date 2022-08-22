@@ -33,7 +33,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const total = document.getElementById('total');
     const manager = getElementByIdInputFil('manager');
     const coach = getElementByIdInputFil('coach');
-    if (isNaN(manager) === true && isNaN(coach)) {
+    if (isNaN(manager) === true && isNaN(coach) === true) {
         alert('Sorry!!!');
         return;
     }
