@@ -33,14 +33,13 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const total = document.getElementById('total');
     const manager = getElementByIdInputFil('manager');
     const coach = getElementByIdInputFil('coach');
-    if (isNaN(manager) === true && isNaN(coach) === true) {
+    if (isNaN(manager) === true || isNaN(coach) === true) {
         alert('Sorry!!!');
+        console.log(isNaN(coach))
         return;
     }
     const PlayerExpenses = parseInt(document.getElementById('Player-Expenses').innerText);
     const totalMoney = PlayerExpenses + manager + coach;
     total.innerText = totalMoney;
-    console.log(isNaN(manager));
-
 
 })
