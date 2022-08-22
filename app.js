@@ -4,14 +4,13 @@ function PlayerInfo(element) {
     li.innerText = playerName;
     const ol = document.getElementById('ol');
     const olLength = ol.children.length;
-
     if (olLength < 5) {
         ol.appendChild(li);
         element.disabled = true;
         element.style.backgroundColor = '#c73452'
     }
     else {
-        alert('Sorry!!!');
+        alert('Please select 5 player');
         return;
     }
 };
@@ -26,6 +25,9 @@ document.getElementById('calculate').addEventListener('click', function () {
     const olLength = ol.children.length;
     const PlayerExpensesTotal = perPlayerMoney * olLength;
     PlayerExpenses.innerText = PlayerExpensesTotal;
+    if (olLength == 0) {
+        alert('No player selected Please select a player')
+    }
 
 
 });

@@ -46,3 +46,9 @@ body {
     width: 70%;
     margin-bottom: 8px;
 }
+
+/* ============ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}

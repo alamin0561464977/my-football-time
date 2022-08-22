@@ -31,9 +31,9 @@
             </div>
         </div>
     </header>
-    <main class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 my-10 container mx-auto">
+    <main class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 my-10 container mx-auto">
         <section class="col-span-2">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 <!-- 1 -->
                 <div class="card card-compact bg-base-100 shadow-xl">
                     <figure><img class="img"
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
             <div class="bg-neutral-800 container mx-auto my-5 rounded-lg py-5 px-20">
                 <h1 class="text-4xl text-center font-bold">Selected - V</h1>
                 <ol id="ol" class="list-decimal font-bold text-xl py-5">
@@ -165,18 +165,18 @@
                 <h1 class="text-4xl text-center font-bold">Budget</h1>
                 <div class="flex flex-nowrap mt-5">
                     <h3 class="font-bold text-lg mx-5">Per Player: </h3>
-                    <input id="per-player" class="input rounded-lg" type="text">
+                    <input id="per-player" class="input rounded-lg" type="number">
                 </div>
                 <button id="calculate" class="button mt-5">Calculate</button>
                 <div class="my-8">
                     <p class="font-bold text-lg">Player Expenses: $<span id="Player-Expenses">000</span></p>
                     <div class="flex flex-nowrap mt-5">
                         <h3 class="font-bold text-lg mx-5">Manager: </h3>
-                        <input id="manager" class="input rounded-lg" type="text">
+                        <input id="manager" class="input rounded-lg" type="number">
                     </div>
                     <div class="flex flex-nowrap mt-5">
                         <h3 class="font-bold text-lg mx-5">Coach: </h3>
-                        <input id="coach" class="input rounded-lg" type="text">
+                        <input id="coach" class="input rounded-lg" type="number">
                     </div>
                     <button id="calculate-total" class="button mt-5">Calculate Total</button>
                     <h2 class="mt-5 text-2xl font-bold">Total: $<span id="total">000</span></h2>
