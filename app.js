@@ -19,7 +19,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerMoney = getElementByIdInputFil('per-player');
     const PlayerExpenses = document.getElementById('Player-Expenses');
     if (isNaN(perPlayerMoney) === true) {
-        alert('Sorry!!!');
+        alert('Please provide Correct information');
         return;
     }
     const ol = document.getElementById('ol');
@@ -34,8 +34,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const manager = getElementByIdInputFil('manager');
     const coach = getElementByIdInputFil('coach');
     if (isNaN(manager) === true || isNaN(coach) === true) {
-        alert('Sorry!!!');
-        console.log(isNaN(coach))
+        alert('Please provide Correct information');
         return;
     }
     const PlayerExpenses = parseInt(document.getElementById('Player-Expenses').innerText);
